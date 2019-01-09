@@ -1,0 +1,44 @@
+.list-item{
+
+    a{
+        display:block;
+    }
+
+    .text-area{
+        padding:12px 16px 9px;
+
+        .title{
+            font-size:14px;
+            font-weight:700;
+            color:#212529;
+            margin-bottom:6px;
+        }
+
+        .description{
+            font-size:12px;
+            color:#666;
+
+            strong{
+                display:inline-block;
+                position:relative;
+                color:#f56a6b;
+                font-weight:400;
+                font-size:1em;
+                padding-right:5.5px;
+                margin-right:5px;
+
+                &:after{
+                    content:"";
+                    display:block;
+                    position: absolute;
+                    top: 1px;
+                    right: 0;
+                    width: 1px;
+                    height: 70%;
+                    background-color: #ccc;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.mobile-util{
+    position:fixed;
+    bottom:15px;
+    right:0;
+
+    .btn-top,
+    .promo{
+        width: 36px;
+        height: 36px;
+        display: block;
+        padding: 6px 16px 0px;
+    }
+
+    .btn-top{
+        position:relative;
+        text-indent:-9999em;
+        overflow:hidden;
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 6px;
+            width: 36px;
+            height: inherit;
+            background-color: #fff;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+
+        &:after{
+            content:"";
+            display:block;
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:21px;
+            height:20px;
+            background-image:url('@{sprite}');
+            background-color:#fff;
+            background-size:@sprite-size;
+            background-position:-636px -262.6666666666667px;
+            transform: translate(-50%, -25%);
+        }
+    }
+}
